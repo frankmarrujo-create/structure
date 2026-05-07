@@ -1,0 +1,191 @@
+    :root{
+        --fondo-contenedor: #fff;
+        --color-labels: #495057;
+        --color-borde-inputs: #ced4da;
+        --fondo-input-group-text: #f1f3f5;
+        --encabezado-tabla: #212529;
+        --color-hover-tabla: #D7E8F7;
+        --color-icono-acciones: #495057;
+        --color-boton-acciones-hover: #e9ecef;
+    }
+
+    /*contenedo para formularios*/
+    .form-wrapper {
+        background: var(--fondo-contenedor);
+        padding: 1.25rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 0.125rem 0.35rem rgba(0,0,0,0.05);
+    }
+    
+    /*labels*/
+    .form-label {
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: var(--color-labels);
+        margin-bottom: 0.25rem;
+    }
+    
+    /*inputs*/
+    .form-control,
+    .form-select {
+        border-radius: 0.4rem;
+        font-size: 0.9rem;
+        border: 1px solid var(--color-borde-inputs);
+        transition: all 0.2s ease;
+    }
+
+    /* focus moderno */
+    .form-control:focus,
+    .form-select:focus {
+        border-color: var(--color-azul-claro);
+        box-shadow: 0 0 0 0.15rem rgba(0, 98, 161, 0.2);
+    }
+    
+    /*input group*/
+    .input-group-text {
+        background: var(--fondo-input-group-text);
+        border: 1px solid var(--color-borde-inputs);
+    }
+    
+    /*checkbox y radio*/
+    .form-check {
+        margin-bottom: 0.3rem;
+    }
+
+    .form-check-input {
+        cursor: pointer;
+    }
+
+    .form-check-label {
+        cursor: pointer;
+        font-size: 0.85rem;
+    }
+    
+    /*switch*/
+    .form-switch .form-check-input {
+        width: 2.2rem;
+        height: 1.2rem;
+    }
+
+    .form-switch .form-check-input:checked {
+        background-color: var(--color-azul-claro);
+        border-color: var(--color-azul-claro);
+    }
+    
+    /*input file*/
+    input[type="file"] {
+        font-size: 0.85rem;
+    }
+    
+    /*input numero y fecha*/
+    input[type="number"],
+    input[type="date"] {
+        text-align: left;
+    }
+    
+    /*tablas*/
+/*    .table {
+        background: #fff;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        font-size: 0.85rem;
+    }
+
+    .table-encabezado th {
+        background-color: var(--color-azul-claro);
+        color: var(--fondo-contenedor);
+    }
+
+    .table th {
+        font-weight: 600;
+        vertical-align: middle;
+    }
+
+    .table td {
+        vertical-align: middle;
+    }
+
+    .table-hover tbody tr:hover {
+        background-color: #f8d7da !important; var(--color-hover-tabla) !important;
+    }*/
+    
+    /*botones de accion*/
+    .btn-group a {
+        padding: 0.35rem;
+        margin: 0 0.15rem;
+        border-radius: 0.35rem;
+        transition: all 0.2s ease;
+        color: var(--color-icono-acciones);
+    }
+
+    .btn-group a:hover {
+        background: var(--color-boton-acciones-hover);
+        transform: scale(1.1);
+    }
+    
+    /*espaciado en formularios*/
+    .row.g-3 > [class*="col-"] {
+        margin-bottom: 0.5rem;
+    }
+    
+    /*generales*/
+    .card-shadow {
+        box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.05);
+    }
+
+    .rounded-custom {
+        border-radius: 0.5rem;
+    }
+    
+     /*tablas*/
+    /* CONTENEDOR */
+    .tabla-pro {
+        border-radius: 12px;
+        overflow: hidden;
+        background-color: var(--fondo-contenedor);
+    }
+
+    /* ENCABEZADO */
+    .tabla-pro thead th {
+        background-color: var(--color-azul-claro); /* gris oscuro moderno */
+        color: var(--fondo-contenedor);
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        border: none;
+    }
+
+    /* FILAS */
+    .tabla-pro tbody tr {
+        transition: all 0.2s ease-in-out;
+    }
+
+    /* HOVER */
+    .tabla-pro tbody tr:hover td {
+        background-color: var(--color-hover-tabla) !important;
+        transform: scale(1.01);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    /* CELDAS */
+    .tabla-pro td {
+        vertical-align: middle;
+        border-color: #f1f1f1;
+    }
+
+    /* BOTONES DE ACCIONES */
+    .tabla-pro .btn-group a {
+        padding: 6px 10px;
+        border-radius: 6px;
+        transition: all 0.2s ease;
+        color: var(--color-azul-oscuro);
+    }
+
+    .tabla-pro .btn-group a:hover {
+        background-color: var(--fondo-contenedor);
+        color: var(--color-sidebar);
+    }
+
+    /* ICONOS */
+    .tabla-pro i {
+        font-size: 14px;
+    }
